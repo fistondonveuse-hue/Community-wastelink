@@ -713,7 +713,28 @@ header {
             }
 
         };
+// MOBILE MENU FUNCTION
 
+function toggleMenu() {
+
+    const navigation = document.getElementById("navigation");
+
+    const menuToggle = document.getElementById("menuToggle");
+
+    navigation.classList.toggle("active");
+
+    const isOpen = navigation.classList.contains("active");
+
+    menuToggle.innerHTML = isOpen ? "✕" : "☰";
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+
+}
 
         // TRACK REPORT FUNCTION
 
