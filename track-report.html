@@ -25,17 +25,24 @@
             line-height: 1.6;
         }
 
-        /* HEADER */
+       /* STICKY MODERN HEADER */
 
-        header {
-            background: #0B3D2E;
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+header {
+    background: rgba(11, 61, 46, 0.97);
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(12px);
+}
 
         .logo {
             font-size: 23px;
